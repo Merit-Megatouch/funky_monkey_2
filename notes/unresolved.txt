@@ -1,0 +1,10 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+LightShow() | funky_monkey_2.so
+ChampEditionI::DisplayMadeIt(int, int) | funky_monkey_2.so
+ChampEditionI::DisplayPrizePool(int, int) | funky_monkey_2.so
+ChampEditionI::GetCurrentLeaderScore(int) | funky_monkey_2.so
+ChampEditionI::GetCurrentNumberOfRounds() | funky_monkey_2.so
+LightShowManager::Play(LightShowManager::Sequences, bool, bool) | funky_monkey_2.so
